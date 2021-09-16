@@ -8,13 +8,15 @@ import sklearn
 from sklearn.preprocessing import StandardScaler
 
 app = Flask(__name__)
+with open('soccer.pkl','rb') as f:
+    model = pickle.load(f)
+@app.route('/')
+def main():
+  return render_template('index.html')
 
-@app.route('/home',methods=['GET','POST'])
+@app.route('/predict',methods=['POST'])
 
 def home():
-  with open('soccer.pkl','rb') as f:
-    model = pickle.load(f)
-
   if request.method == 'POST':
     Age = int(request.form['age'])
     Height = float(request.form['height'])
