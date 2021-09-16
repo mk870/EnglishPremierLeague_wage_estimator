@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="/static/eplweb.css">
+ <title>English Premier League Player Wage Predictor Webpage</title>
+</head>
+<body>
+ <div class="background">
+  <header>
+    <div class="header_item1"><img src="../static/epl_logo.png" alt="EPL Logo" width="100"></div>
+    <div class="header_item2"><h1>English Premier League</h1></div>
+    <div class="header_item3"><h1>Player Wage Predictor</h1></div>
+  </header>
+
+  <div class="body_container">
+    <form action="/home" method="POST">
+      <div class="info_container">
+        <div class="contractual_attributes">
+          <h4>Contractual Attributes</h4>
+          Team  <br>
+          <select name="team" id="first" required="required">
+            <option value="manchestercity">Manchester City</option>
+            <option value="manchesterunited">Manchester United</option>
+            <option value="Liverpool">Liverpool</option>
+            <option value="Everton">Everton</option>
+            <option value="Arsenal">Arsenal</option>
+            <option value="Tottenham">Tottenham</option>
+            <option value="Chelsea">Chelsea</option>
+            <option value="Aston villa">Aston villa</option>
+            <option value="Brighton & Hove Albion">Brighton&Hove Albion</option>
+            <option value="Burnley">Burnley</option>
+            <option value="Crystal palace">Crystal palace</option>
+            <option value="Fulham">Fulham</option>
+            <option value="Leeds United">Leeds United</option>
+            <option value="Leicester City">Leicester City</option>
+            <option value="Newcastle United">Newcastle United</option>
+            <option value="Sheffield United">Sheffield United</option>
+            <option value="Southampton">Southampton</option>
+            <option value="West brom">West brom</option>
+            <option value="West ham">West ham</option>
+            <option value="Wolvehampton">Wolvehampton</option>
+          </select>
+          <br><br>
+          Years in the club  <br>
+          <input type="number" id="second" name="years_in_the_club" required="required" min="0" step="0.1"><br><br>
+          Remaining contract years  <br>
+          <input type="number" id="third" name="Remaining_contract_years" required="required" min="0" step="0.1"><br><br>
+          Market value in Euros <br>
+          <input type="number" id="fourth" name="value" required="required" min="0" ><br><br>
+          On loan  <br>
+          <select name="On_loan" id="fifth" required>
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+          </select><br><br>
+          Position  <br>
+          <select name="Position" id="eighth" required="required">
+            <option value="6">Goal keeper</option>
+            <option value="8">Left mid-fielder</option>
+            <option value="1">Central Attacking mid-fielder</option>
+            <option value="3">Central Defensive mid-fielder</option>
+            <option value="10">Left wing back</option>
+            <option value="5">Central mid-fielder</option>
+            <option value="11">Right back</option>
+            <option value="9">Left winger</option>
+            <option value="2">Center back</option>
+            <option value="12">Right mid-fielder</option>
+            <option value="7">Left back</option>
+            <option value="15">Striker</option>
+            <option value="13">Right winger</option>
+            <option value="14">Right wing back</option>
+            <option value="4">Center forward</option>
+          </select>
+        </div>
+
+        <div class="physical_attributes">
+          <h4>Physical Player Attributes</h4>
+          Age <br>
+          <input type="number" id="ninth" name="age" required="required" min="0"><br><br>
+          Height <br>
+          <input type="number" id="tenth" name="height" required="required" min="0" step="0.01" placeholder="Metres"><br><br>
+          Weight <br>
+          <input type="number" id="eleveth" name="weight" required="required" min="0" step="0.1" placeholder="Kilograms"><br><br>
+          Physic <br>
+          <input type="number" id="twelveth" name="physic" required="required" max="100" min="0" placeholder="max=100"><br><br>
+          Stamina <br>
+          <input type="number" id="fourteenth" name="stamina" required="required" max="100" min="0" placeholder="max=100"><br><br>
+          Agility <br>
+          <input type="number" id="fifteenth" name="agility" required="required" max="100" min="0" placeholder="max=100"><br><br>
+        </div>
+
+        <div class="perfomance_attributes">
+          <h4>Perfomance Attributes</h4>
+          International rating  <br>
+          <input type="number" id="sixth" name="International_rating" required="required" max="5"  min="0" placeholder="max=5"><br><br>
+          Rating  <br>
+          <input type="number" id="seventh" name="Rating" required="required" max="100" min="0" placeholder="max=100" ><br><br>
+          Mentality <br>
+          <input type="number" id="thirteenth" name="mentality" required="required" max="500" min="0" placeholder="max=500"><br><br>
+          Ball control <br>
+          <input type="number" id="sixteenth" name="ball_control" required="required" max="100" min="0" placeholder="max=100"><br><br>
+          Skill <br>
+          <input type="number" id="seveteenth" name="skill" required="required" max="500" min="0" placeholder="max=500"><br><br>
+        </div>
+     
+        <div class="submiter">
+          <button id="sub" type="submit" class="button">Predict Wage</button>
+        </div>
+      </div>
+    </form>
+  <div class="prediction"><h3>{{prediction_text}}</h3></div>
+ </div>
+ <footer>
+    <div class="copyright">
+      All rights reserved
+    </div>
+    
+ </footer>
+ 
+ </div>
+ 
+</body>
+</html>
