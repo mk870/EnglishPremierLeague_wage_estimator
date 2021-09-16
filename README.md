@@ -81,5 +81,5 @@ Absolute mean error is 10 112.30
 
 ### **Productionization**
 ***
-In this step, I built a flask API endpoint that is hosted on Heroku. The API endpoint takes in a request with a list of values grouped as contractual,physical and perfomance player attributes and returns an estimated weekly wage.
+In this step, I built a flask API endpoint that is hosted on Heroku visit https://epl-wage-estimator.herokuapp.com/ to look at it. The API endpoint takes in a request with a list of values grouped as contractual,physical and perfomance player attributes and returns an estimated weekly wage.
 
