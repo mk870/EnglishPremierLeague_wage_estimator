@@ -1,4 +1,6 @@
 # English Premier League Player Wage Estimator: Project Overview
+<img src="https://i.ibb.co/TBbGg7Q/English-Premier-League-Player-Wage-Predictor-Webpage.png" alt="English-Premier-League-Player-Wage-Predictor-Webpage" border="0">  
+
 * Created a tool that estimates EPL player wages(MAE~7300).
 * Scraped all the 2020/21 player attributes from sofifa.com.
 * Engineered features so as to quantify the contribution of each feature to weekly wages.
