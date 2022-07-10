@@ -11,6 +11,9 @@
 ***
 **Python Version**: 3.8  
 **Packages**: Pandas,Numpy,Sklearn,Matplotlib,Seaborn,Json,Flask,Pickle  
+
+![Python](https://img.shields.io/badge/python-3670A0?style=flat&logo=python&logoColor=ffdd54) ![Flask](https://img.shields.io/badge/flask-%23000.svg?style=flat&logo=flask&logoColor=white) ![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=flat&logo=pandas&logoColor=white) ![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=flat&logo=numpy&logoColor=white) ![Jupyter Notebook](https://img.shields.io/badge/jupyter-%23FA0F00.svg?style=flat&logo=jupyter&logoColor=white)  
+
 **For Web Framework Requirements**: pip install -r requirements.txt  
 **Scraper**:  ([Octoparse 8 Software](https://www.octoparse.com/))  
 
@@ -83,5 +86,6 @@ Absolute mean error is 10 112.30
 
 ### **Productionization**
 ***
-In this step, I built a flask API endpoint that is hosted on Heroku visit https://epl-wage-estimator.herokuapp.com/ to look at it. The API endpoint takes in a request with a list of values grouped as contractual,physical and perfomance player attributes and returns an estimated weekly wage.
+In this step, I built a flask API endpoint that is hosted on Heroku. The API endpoint takes in a request with a list of values grouped as contractual,physical and perfomance player attributes and returns an estimated weekly wage.  
+**Live Application:** [EPL-wage-estimator](https://epl-wage-estimator.herokuapp.com)
 
